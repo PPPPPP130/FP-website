@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Kelompok 25 Portofolio</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>My Portofolio Kelompok 25</h1>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Nama saya Abdullah Syamil Pramudya. Saya masih duduk di bangku SMA.
+            Hobi saya adalah menggambar dan menonton.
+            Impian saya ialah berkuliah di DKV ITS dan membanggakan orang tua.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Ini adalah gambar saya yang pertama, menceritakan sukuna yang lagi teriak</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Ini adalah gambar saya yang kedua, menceritakan jojo dengan stancenya</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/abdu.sp/
+            " target="_blank">Instagram</a>
+            <a href="https://id.linkedin.com/in/abdullah-pramudya-3630b3298
+            " target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/notkaeruN" target="_blank">Twitter</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kelompok 25. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projectImage = document.querySelectorAll('.project img');
+
+            projectImage.forEach(img => {
+                img.addEventListener('click', function () {
+                    alert("You clicked on the project image!");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
